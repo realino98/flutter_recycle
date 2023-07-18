@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'dashboard_page.dart';
+
 class SignInPage extends StatefulWidget {
   const SignInPage({super.key});
 
@@ -62,7 +64,12 @@ class _SignInPageState extends State<SignInPage> {
                   Text("Forgot Password?"),
                 ],
               ),
-              ElevatedButton(onPressed: () {}, child: Text("SIGN IN")),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => DashboardPage()));
+                  },
+                  child: Text("SIGN IN")),
               Text("Or"),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -86,7 +93,7 @@ class _SignInPageState extends State<SignInPage> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),

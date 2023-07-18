@@ -7,8 +7,9 @@ class StartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Center(
+      body: Center(
+        child: Container(
+          height: 300,
           child: Column(
             children: [
               Text(
