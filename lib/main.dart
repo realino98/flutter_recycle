@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_recycle/pages/start_page.dart';
+import 'package:flutter_recycle/pages/categories_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -27,7 +27,7 @@ class MainApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: StartPage(),
+      home: CategoriesPage(),
     );
   }
 }
